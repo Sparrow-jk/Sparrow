@@ -15,9 +15,9 @@ public class ListenerAction {
             }
         });
 
-        /*
-         * 传入openWindows事件，通知listener，事件监听器，对open事件感兴趣的listener将会执行
-         **/
+        
+         // 传入openWindows事件，通知listener，事件监听器，对open事件感兴趣的listener将会执行
+         
         eventSource.notifyListenerEvents(new IEvent("closeWindows"));
 
     }
