@@ -1,4 +1,4 @@
-package com.sparrow.demo;
+package com.sparrow.listenerpattern;
 
 
 import java.util.EventListener;
