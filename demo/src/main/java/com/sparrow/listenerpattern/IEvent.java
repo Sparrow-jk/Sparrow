@@ -6,7 +6,7 @@ import java.util.EventObject;
  * @author Sparrow
  */
 public class IEvent extends EventObject {
-    private String eventType;
+    //private String eventType;
 
     public IEvent(Object source) {
         super(source);
