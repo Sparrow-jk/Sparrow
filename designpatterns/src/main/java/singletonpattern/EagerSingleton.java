@@ -9,7 +9,7 @@ package singletonpattern;
 public class EagerSingleton {
 
     /**
-     * 单例模式的要义
+     * 构造方法私有化
      * 私有的构造器 使该单例类不会被外部创建
      * 除了反射调用
      */
@@ -17,13 +17,13 @@ public class EagerSingleton {
     }
 
     /**
-     * 私有静态
+     * 实例化的变量引用私有化
      * 使该单例类在类加载初始化的时候便创建一个饿汉单例静态对象提供内部使用
      */
     private static EagerSingleton eagerSingleton = new EagerSingleton();
 
     /**
-     * 公有静态
+     * 获取实例的方法共有
      * 提供外部调用私有的饿汉单例
      * @return eagerSingleton 饿汉单例
      */
