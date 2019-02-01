@@ -21,7 +21,7 @@ public class DclSingleton {
      * 实例化的变量引用私有化
      * 使该单例类在类加载初始化的时候便创建 空 的单例对象提供内部赋值使用
      */
-    private static DclSingleton dclSingleton;
+    private static volatile DclSingleton dclSingleton;
 
     /**
      * 获取实例的方法共有
