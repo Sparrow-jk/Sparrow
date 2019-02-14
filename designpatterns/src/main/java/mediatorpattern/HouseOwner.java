@@ -1,23 +1,26 @@
 package mediatorpattern;
 
-public class HouseOwner extends Person {
+/**
+ * 房东
+ * @author Sparrow
+ */
+public class HouseOwner extends AbstractCharacter {
     HouseOwner(String name, Mediator mediator) {
         super(name, mediator);
     }
 
     /**
-     * @desc 与中介者联系
-     * @param message
-     * @return void
+     * 与中介者联系
+     * @param message 消息
      */
-    public void constact(String message){
-        mediator.constact(message, this);
+    @Override
+    public void contact(String message){
+        mediator.contact(message, this);
     }
 
     /**
-     * @desc 获取信息
-     * @param message
-     * @return void
+     * 获得信息
+     * @param message 消息
      */
     public void getMessage(String message){
         System.out.println("房主:" + name +",获得信息：" + message);

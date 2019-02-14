@@ -8,9 +8,9 @@ import java.util.EventListener;
  */
 public interface IListener extends EventListener {
 
-    String CLOSEWINDOWS = "closeWindows";
+    String CLOSE= "close";
 
-    String OPENWINDOWS = "openWindows";
+    String OPEN = "open";
 
     /**
      * 事件处理

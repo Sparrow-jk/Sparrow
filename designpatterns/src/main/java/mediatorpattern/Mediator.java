@@ -1,6 +1,14 @@
 package mediatorpattern;
 
-public abstract class Mediator {
-    //申明一个联络方法
-    public abstract void constact(String message,Person person);
+/**
+ * 中介者
+ * @author Sparrow
+ */
+public interface  Mediator {
+    /**
+     * 联络方法
+     * @param message 消息
+     * @param character 人物
+     */
+      void contact (String message,AbstractCharacter character);
 }

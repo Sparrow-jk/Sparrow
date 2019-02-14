@@ -10,10 +10,10 @@ public class ListenerAction {
 
         eventSource.registerListener(event -> {
             event.doEvent();
-            if (IListener.CLOSEWINDOWS.equals(event.getSource())) {
+            if (IListener.CLOSE.equals(event.getSource())) {
                 System.out.println("doClose");
             }
-            if (IListener.OPENWINDOWS.equals(event.getSource())) {
+            if (IListener.OPEN.equals(event.getSource())) {
                 System.out.println("doOpen");
             }
         });
@@ -21,7 +21,7 @@ public class ListenerAction {
 
         // 传入openWindows事件，通知listener，事件监听器，对open事件感兴趣的listener将会执行
 
-        eventSource.notifyListenerEvents(new IEvent("openWindows"));
+        eventSource.notifyListenerEvents(new IEvent("open"));
 
     }
 

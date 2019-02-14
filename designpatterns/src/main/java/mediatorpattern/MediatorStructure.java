@@ -1,6 +1,6 @@
 package mediatorpattern;
 
-public class MediatorStructure extends Mediator {
+public class MediatorStructure implements Mediator {
 
     //首先中介结构必须知道所有房主和租房者的信息
     private HouseOwner houseOwner;
@@ -23,11 +23,11 @@ public class MediatorStructure extends Mediator {
     }
 
     @Override
-    public void constact(String message, Person person) {
+    public void contact(String message, AbstractCharacter character) {
         //如果是房主，则租房者获得信息
-        if (person == houseOwner) {
+        if (character == houseOwner) {
             tenant.getMessage(message);
-            //反正则是房主获得信息
+            //否则是房主获得信息
         } else {
             houseOwner.getMessage(message);
         }
