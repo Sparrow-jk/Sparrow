@@ -1,0 +1,3 @@
+dubbo=dubbo.DubboAdaptive
+springCloud=dubbo.SpringCloudAdaptive
+thrift=dubbo.ThriftAdaptive

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+//外部类名
+option java_outer_classname = "StudentPOJO";
+//POJO数据
+message Student{
+  //不是赋值 是序号
+  int32 id = 1;
+  string name = 2;
+}

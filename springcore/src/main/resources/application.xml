@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+<!--    <bean id="helloWorldService" class="testXmlSpring.HelloWorldService">
+        <property name="name" value="jeysin"/>
+        <property name="age" value="13"/>
+        <property name="user" ref="user"/>
+    </bean>
+
+    <bean id="user" class="testXmlSpring.User">
+        <property name="helloWorldService" ref="helloWorldService" />
+        <property name="name" value="yize"/>
+    </bean>-->
+    <aop:aspectj-autoproxy/>
+    <bean id="student" class="aoptest.Student"/>
+    <bean class="aoptest.AspectJTest"/>
+
+    <!--
+        <bean id="targetSource1" class="testXmlSpring.TargetSourceTest"/>-->
+
+
+</beans>
