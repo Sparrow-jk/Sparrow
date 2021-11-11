@@ -24,6 +24,6 @@ target/
 /nbdist/
 /.nb-gradle/
 
-##Test##
+##sort.HeapSort##
 test/
 out/

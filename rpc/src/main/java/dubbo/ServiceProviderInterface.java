@@ -19,6 +19,6 @@ import org.apache.dubbo.common.extension.SPI;
 @SPI("dubbo")
 public interface ServiceProviderInterface {
 
-    @Adaptive({"t"})
+    @Adaptive
     String echo(String msg, URL url);
 }

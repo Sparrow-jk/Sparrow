@@ -2,6 +2,7 @@ package testSetPropertyValues;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 /**
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Component;
  * Copyright (c) 2020, Sparrow All Rights Reserved.
  */
 @Component
+@Lazy
 public class TestController {
     @Value("${testName}")
     String testName;

@@ -2,6 +2,7 @@ package dubbo;
 
 
 import org.apache.dubbo.common.URL;
+import org.apache.dubbo.common.extension.Adaptive;
 
 /**
  * TODO

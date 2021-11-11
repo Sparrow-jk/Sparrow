@@ -16,24 +16,24 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Start {
 
-//    public static void main(String[] args) {
-//        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
-//
-//        HelloWorldService helloWorldService = (HelloWorldService) context.getBean("helloWorldService");
-//        helloWorldService.showHelloWorld();
-//
-//        User user = (User) context.getBean("user");
-//        user.showUser();
-//    }
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 
-    public static void main(String[] args) throws Exception {
+        HelloWorldService helloWorldService = (HelloWorldService) context.getBean("helloWorldService");
+        helloWorldService.showHelloWorld();
+
+        User user = (User) context.getBean("user");
+        user.showUser();
+    }
+
+/*    public static void main(String[] args) throws Exception {
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
         TargetSource targetSource = (TargetSource) context.getBean("targetSource1");
         for (int i = 0; i < 10; i++) {
             Apple apple = (Apple) targetSource.getTarget();
             apple.eat();
         }
-    }
+    }*/
 
 
 }

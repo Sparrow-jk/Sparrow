@@ -22,8 +22,8 @@ public class dubboTest {
     public void test1() {
         ExtensionLoader<ServiceProviderInterface> loader = ExtensionLoader.getExtensionLoader(ServiceProviderInterface.class);
         ServiceProviderInterface testCaseSPI = loader.getAdaptiveExtension();
-        URL url = URL.valueOf("test://localhost/test?t=thrift");
-        //URL url = URL.valueOf("test://localhost/test?service.provider.interface=thrift");
+       // URL url = URL.valueOf("test://localhost/test?thrift");
+        URL url = URL.valueOf("test://localhost/test?service.provider.interface=thrift");
         System.out.println(testCaseSPI.echo("d",url));
     }
 
